@@ -198,14 +198,14 @@ a {
   padding: 125px;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 0px;
   border-radius: 700px;
-  /* background: radial-gradient(
+  background: radial-gradient(
     50% 50% at 50% 50%,
     #763cac 0%,
     rgba(50, 15, 133, 0) 100%
-  ); */
+  );
 }
 
 .skill-grid {
@@ -217,11 +217,11 @@ a {
   /* grid-auto-columns: 1fr;
     grid-auto-columns: 1fr; */
   border-radius: 700px;
-  background: radial-gradient(
+  /* background: radial-gradient(
     50% 50% at 50% 50%,
     #763cac 0%,
     rgba(50, 15, 133, 0) 100%
-  );
+  ); */
 }
 
 .skill-card {

@@ -337,6 +337,11 @@ a {
     padding-right: 20px;
   }
 
+  .contact-card {
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 1fr;
+  }
+
   .contact-card .center{
     /* flex-shrink: 1; */
     text-align: start;

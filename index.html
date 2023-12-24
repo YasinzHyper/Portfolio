@@ -10,12 +10,13 @@
             href="https://fonts.googleapis.com/css?family=Preahvihear">
         <script src="https://kit.fontawesome.com/61098e68a5.js"
             crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 
     <body>
         <header id="nav-bar">
             <ul>
-                <i class="fa-solid fa-m fa-lg" style="color: #ffffff;"></i>
+                <i id="logo" class="fa-solid fa-m fa-lg" style="color: #ffffff;"></i>
             </ul>
             <li><a href="#intro-section">Home</a></li>
             <li><a href="#skills">About</a></li>
@@ -27,14 +28,14 @@
 
             <div class="intro">
                 <div class="center">
-                    <div class="profile">
+                    <div data-aos="fade-right" data-aos-duration="700" class="profile">
                         <img src="./images/profile-pic-nobg.png"
                             alt="profile-pic"
                             class="profile-pic">
                     </div>
                 </div>
 
-                <div class="short-description">
+                <div data-aos="fade-left" data-aos-duration="1000" class="short-description">
                     <p>Hello! I am <span class="name">Mohammed Yasin Zuhayr</span></p>
                     <br>
                     A programmer who,
@@ -45,26 +46,27 @@
                     </span>
                 </div>
 
-                <div class="center occupation-description">
+                <div data-aos="fade-right" data-aos-duration="1000" class="center occupation-description">
                     <p>
                         I'm a
                         <span class="occupation"> Student</span>
                         at <span class="occupation"> MSRIT</span>, Bengaluru.
                         <br>
-                        Currently pursuing my first year of B.E. in Information
+                        currently in my first year of B.E. in Information
                         Science and Engineering.
                     </p>
 
                 </div>
 
-                <div class="center occupation-description">
+                <div data-aos="fade-left" data-aos-duration="1000" class="center occupation-description">
                     <p>
                         I'm a passionate programmer, with a fascination for
                         technology from a very young age.
                         <br>
                         I'm an enthusiastic learner.
-                        I can develop beautiful, functional and innovative websites and
-                        mobile applications that can solve a wide variety of problems.
+                        I can develop beautiful and innovative websites and
+                        mobile applications that
+                        can solve a wide variety of problems.
                     </p>
                 </div>
             </div>
@@ -76,34 +78,46 @@
             <div class="container">
                 <div class="topic-header"><h1>Skills</h1><br> </div>
                 <div class="skill-grid">
-                    <div class="skill-card">
+                    <div data-aos="fade-right" class="skill-card">
                         <img src="./images/android-logo.png" alt="img">
                         <p> Android Development</p>
                     </div>
-                    <div class="skill-card">
+                    <div data-aos="flip-down" class="skill-card">
                         <img src="./images/flutter-logo.png" alt="img">
                         <p>Flutter/Dart</p>
                     </div>
-                    <div class="skill-card">
+                    <div data-aos="fade-left" class="skill-card">
                         <img src="./images/JavaScript-logo.png" alt="img">
                         <p>JavaScript</p>
                     </div>
-                    <div class="skill-card">
+                    <div data-aos="fade-right" class="skill-card">
                         <img src="./images/react-logo.png" alt="img">
                         <p> React.js</p>
                     </div>
-                    <div class="skill-card">
+                    <div data-aos="flip-down" class="skill-card">
                         <img src="./images/firebase-logo.png    " alt="img">
                         <p> FireBase </p>
                     </div>
-                    <div class="skill-card">
+                    <div data-aos="fade-left" class="skill-card">
                         <img src="./images/css-logo.png" alt="img">
                         <p> HTML/CSS</p>
+                    </div>
+                    <div data-aos="fade-right" class="skill-card">
+                        <img src="./images/nodejs-logo.png" alt="img">
+                        <p> Node.js </p>
+                    </div>
+                    <div data-aos="flip-down" class="skill-card">
+                        <img src="./images/postgresql-logo.png" alt="img">
+                        <p>PostgreSQL</p>
+                    </div>
+                    <div data-aos="fade-left" class="skill-card">
+                        <img src="./images/express-logo.png" alt="img">
+                        <p>Express.js</p>
                     </div>
                 </div>
                 <br> <br>
                 <div class="center">
-                    <div class="center skill-card">
+                    <div data-aos="zoom-in-up" class="center skill-card">
                         <img src="./images/question-mark-logo.png" alt="img">
                         <p> Always ready to learn...</p>
                     </div>
@@ -125,7 +139,7 @@
         <section id="contact">
             <div class="center contact-container">
                 <div class="contact-card">
-                    <div class="center">
+                    <div data-aos="zoom-in-right" class="center">
                         <b>Get in touch</b>
                         <p>
                             <br>
@@ -137,7 +151,7 @@
                             Or simply drop a message on my LinkedIn.
                         </p>
                     </div>
-                    <div class="center">
+                    <div data-aos="zoom-in-left" class="center">
                         <div>
                             <a>
                                 <i class="fa-solid fa-envelope"></i>
@@ -166,7 +180,11 @@
 
             </div>
         </section>
-
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>

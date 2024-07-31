@@ -1,0 +1,8 @@
+.projectsContainer{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    /* flex-direction: row; */
+}

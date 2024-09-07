@@ -2,8 +2,6 @@ import { cn } from "@/lib/utils";
 import DotPattern from "../magicui/dot-pattern";
 import WordRotate from "../magicui/word-rotate";
 import TypingAnimation from "../magicui/typing-animation";
-import AnimatedGradientText from "../magicui/animated-gradient-text";
-import SparklesText from "../magicui/sparkles-text";
 
 function Intro() {
   return (
@@ -16,9 +14,9 @@ function Intro() {
             className="profile"
           >
             <img
-              src="./images/profile-pic-nobg.png"
+              src="/images/profile-pic-nobg.png"
               alt="profile-pic"
-              className="profile-pic "
+              className="profile-pic"
             />
           </div>
         </div>

@@ -16,9 +16,9 @@ function Contact() {
           </div>
           <div className="center">
             <div>
-              <a>
+              <a href="mailto:myasinzuhayr@gmail.com">
                 <i className="fa-solid fa-envelope"></i>
-                &nbsp;zulfiyasser@gmail.com
+                &nbsp;myasinzuhayr@gmail.com
               </a>
             </div>
             <div>

@@ -9,7 +9,7 @@ function Intro() {
   return (
     <section id="intro-section">
       <div className="intro">
-        <div className="center">
+        <div className="center pb-4">
           <div
             // data-aos="fade-right"
             // data-aos-duration="700"
@@ -45,7 +45,7 @@ function Intro() {
             paints pixels of possibility with code...
           </span> */}
           <WordRotate
-            className="text-4xl font-bold text-white"
+            className="sm:text-4xl font-bold text-white text-2xl"
             words={[
               "Problem Solver",
               "Developer",
@@ -71,8 +71,7 @@ function Intro() {
             
             at <span className="occupation"> MSRIT</span>, Bengaluru.
             <br />
-            currently in my 2nd year of B.E. in Information Science and
-            Engineering.
+            Currently in my 3rd year of Bachelor's in Information Science and Engineering.
           </p>
         </div>
 

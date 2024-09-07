@@ -3,7 +3,7 @@ function Skills() {
     <section id="skills">
       <div className="container">
         <div className="topic-header">
-          <h1>Skills</h1>
+          <h1 class="text-4xl font-bold p-4">Skills</h1>
           <br />
         </div>
         <div className="skill-grid">

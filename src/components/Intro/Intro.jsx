@@ -14,7 +14,7 @@ function Intro() {
             className="profile"
           >
             <img
-              src="/profile-pic-nobg.png"
+              src="./profile-pic-nobg.png"
               alt="profile-pic"
               className="profile-pic"
             />

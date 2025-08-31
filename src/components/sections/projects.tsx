@@ -77,8 +77,8 @@ const PROJECTS: Project[] = [
     stack: ["Next.js", "TypeScript", "React", "shadcn-ui", "TailwindCSS", "FastAPI", "Python", "Supabase", "PostgreSQL", "Vercel"],
     links: { demo: "https://github.com/YasinzHyper/AlgoAce", github: "https://github.com/YasinzHyper/AlgoAce" },
     media: {
-      image: "/images/projects/algoace-preview.jpg",
-      video: "/videos/projects/algoace-demo.mp4",
+      image: "/Portfolio/images/projects/algoace-preview.jpg",
+      video: "/Portfolio/videos/projects/algoace-demo.mp4",
       alt: "AlgoAce dashboard showing AI-generated questions and explanations"
     },
   },
@@ -97,7 +97,7 @@ const PROJECTS: Project[] = [
     stack: ["React", "JavaScript", "Vite", "TailwindCSS", "Node.js", "Express.js", "Prisma", "MongoDB", "Vercel", "Heroku", "Socket.io"],
     links: { demo: "https://prime-estate-rho.vercel.app/", github: "https://github.com/YasinzHyper/PrimeEstate" },
     media: {
-      image: "/images/projects/primeestate-preview.jpg",
+      image: "/Portfolio/images/projects/primeestate-preview.jpg",
       alt: "PrimeEstate property listing interface with search filters"
     },
   },
@@ -112,8 +112,8 @@ const PROJECTS: Project[] = [
     stack: ["Flutter", "Dart", "TensorFlow"],
     links: { demo: "https://github.com/YasinzHyper/IntelliCam", github: "https://github.com/YasinzHyper/IntelliCam" },
     media: {
-      image: "/images/projects/intellicam-preview.jpg",
-      video: "/videos/projects/intellicam-demo.mp4",
+      image: "/Portfolio/images/projects/intellicam-preview.jpg",
+      video: "/Portfolio/videos/projects/intellicam-demo.mp4",
       alt: "IntelliCam mobile app showing real-time object detection"
     },
   },

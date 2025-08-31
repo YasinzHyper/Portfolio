@@ -48,9 +48,9 @@ export function HeroSection() {
               style={{ y: titleY, opacity: titleOpacity }}
               className="text-balance bg-gradient-to-br from-white via-white to-white/70 bg-clip-text text-4xl font-semibold leading-[1.05] text-transparent sm:text-5xl md:text-6xl"
             >
-              Building reliable AI systems
-              <br className="hidden sm:block" />
-              and fast, delightful products.
+             Building reliable AI systems
+              <br className="hidden sm:block" /> 
+              &nbsp;and fast, impactful products.
             </fmMotion.h1>
 
             {/* Typewriter narrative */}

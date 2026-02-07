@@ -41,9 +41,22 @@ type Education = {
 
 const EXPERIENCES: Experience[] = [
   {
+    org: "Oracle",
+    role: "SDE Intern",
+    period: "Jan 2026 — Present",
+    location: "Bengaluru · Hybrid",
+    highlights: [
+      "Part of the RPAS (Retail Predictive Analytics Server) backend team under RGBU, supporting large-scale retail planning systems",
+      "Contributing to core server components using C++, Java, PL/SQL, and Oracle DB in a high-performance enterprise environment",
+    ],
+    tech: ["C++", "Java", "Oracle DB", "PL/SQL", "Shell Scripting"],
+    companyUrl: "https://www.oracle.com/",
+    logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eRETWKNQ0IuSETVDffHht0BpBthJtTH9Fg&s",
+  },
+  {
     org: "Morgan Stanley",
     role: "Technology Apprentice (SDE Intern)",
-    period: "Aug 2025 — Present",
+    period: "Aug 2025 — Dec 2025",
     location: "Bengaluru · Hybrid",
     highlights: [
       "Modernizing enterprise applications on the Application-Development track",
@@ -51,7 +64,7 @@ const EXPERIENCES: Experience[] = [
     ],
     tech: ["TypeScript", "Java", "React", "Python", "CI/CD"],
     companyUrl: "https://www.morganstanley.com/",
-    logoUrl: "https://logo.clearbit.com/morganstanley.com",
+    logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg4b2xFrY7mhOS9pGOnckG88R0ZzHpzYZ7hA&s",
   },
   {
     org: "LabelBox",
@@ -89,7 +102,7 @@ const EXPERIENCES: Experience[] = [
     ],
     tech: ["Kotlin", "Android Studio", "Python", "TensorFlow", "Recommenders"],
     companyUrl: "https://research.samsung.com/sri-b",
-    logoUrl: "https://logo.clearbit.com/samsung.com",
+    logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoQxzNcB2CaxoIXleMEh5LxBYLdNFsofCYRg&s",
   },
 ];
 

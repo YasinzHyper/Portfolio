@@ -16,7 +16,7 @@ import {
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 // ------------------------------------------------------------------
-// Data (personalized from your resume)
+// Data (personalized from resume)
 // ------------------------------------------------------------------
 
 type Experience = {
@@ -46,8 +46,9 @@ const EXPERIENCES: Experience[] = [
     period: "Jan 2026 — Present",
     location: "Bengaluru · Hybrid",
     highlights: [
-      "Part of the RPAS (Retail Predictive Analytics Server) backend team under RGBU, supporting large-scale retail planning systems",
-      "Contributing to core server components using C++, Java, PL/SQL, and Oracle DB in a high-performance enterprise environment",
+      "Engineered 50+ automated test scenarios for Oracle RPAS, expanding defect detection coverage by 30% and significantly reducing escaped bugs in the C++/Java enterprise backend.",
+      "Resolved 10+ high-severity bugs across RPAS server modules in C++ and Java, directly improving system stability in a large-scale retail planning platform.",
+      "Built Codex-assisted workflows via MCP with custom RPAS skills for automated code review, debugging and test scripting, cutting manual debugging effort by 50%.",
     ],
     tech: ["C++", "Java", "Oracle DB", "PL/SQL", "Shell Scripting"],
     companyUrl: "https://www.oracle.com/",
@@ -59,10 +60,10 @@ const EXPERIENCES: Experience[] = [
     period: "Aug 2025 — Dec 2025",
     location: "Bengaluru · Hybrid",
     highlights: [
-      "Modernizing enterprise applications on the Application-Development track",
-      "Full-stack delivery with CI/CD and DevOps within firm standards",
+      "Engineered an AI-powered PDF bulk processing system capable of handling 10k+ documents in parallel, cutting manual effort by 80% and operational cost by 75%.",
+      "Modernized internal enterprise applications with React-based frontends and Spring Boot/FastAPI microservices, enhancing service uptime, modularity, and deployment efficiency.",
     ],
-    tech: ["TypeScript", "Java", "React", "Python", "CI/CD"],
+    tech: ["TypeScript", "Java", "React", "Spring Boot", "FastAPI", "Python"],
     companyUrl: "https://www.morganstanley.com/",
     logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg4b2xFrY7mhOS9pGOnckG88R0ZzHpzYZ7hA&s",
   },
@@ -98,7 +99,7 @@ const EXPERIENCES: Experience[] = [
     period: "Aug 2024 — Jun 2025",
     location: "Remote",
     highlights: [
-      "Developed a recommender system for Android apps leveraging app usage sequence data, utilizing sequence modeling techniques to optimize user recommendations.",
+      "Engineered an Android app recommender leveraging app-usage sequence data, improving recommendation accuracy by 20%+ in internal benchmarks.",
     ],
     tech: ["Kotlin", "Android Studio", "Python", "TensorFlow", "Recommenders"],
     companyUrl: "https://research.samsung.com/sri-b",
@@ -111,7 +112,7 @@ const EDUCATION: Education = {
   degree: "B.E. Information Science & Engineering",
   period: "2022 — 2026 (expected)",
   location: "Bengaluru, Karnataka",
-  gpa: "CGPA 9.43",
+  gpa: "CGPA 9.26",
   courses: [
     "Machine Learning",
     "Distributed Systems",

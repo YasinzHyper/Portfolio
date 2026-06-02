@@ -67,8 +67,7 @@ export function HeroSection() {
             </div>
 
             <p className="mt-4 max-w-[60ch] text-pretty text-sm leading-relaxed text-white/70 sm:text-base">
-              Full-stack & GenAI engineer. Technology Apprentice (SDE Intern) at Morgan Stanley. Former AI Trainer at xAI
-              (Human Data). Creator of <b>AlgoAce</b> and <b>PrimeEstate</b>. I ship, measure, and iterate.
+              Full-stack & GenAI engineer. SDE Intern at <b>Oracle</b> (RPAS). Former Technology Apprentice at <b>Morgan Stanley</b>, AI Trainer at <b>xAI</b>, and Research Intern at <b>Samsung Research</b>. Creator of <b>AlgoAce</b> and <b>PrimeEstate</b>. I ship, measure, and iterate.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-3">
@@ -94,7 +93,7 @@ export function HeroSection() {
               <Dot />
               <Stat label="Research" value="Samsung" />
               <Dot />
-              <Stat label="Now" value="Shipping AlgoAce" />
+              <Stat label="Now" value="Oracle · SDE Intern" />
             </div>
           </fmMotion.div>
         </div>

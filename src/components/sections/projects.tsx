@@ -63,6 +63,31 @@ export type Project = {
 };
 
 const PROJECTS: Project[] = [
+  // AlgoAce must stay the FIRST project: the carousel opens on index 0.
+  // Add new projects after it; don't move it unless explicitly instructed otherwise.
+  {
+    id: "algoace",
+    title: "AlgoAce",
+    tagline: "Multi-Agent RAG Framework for Personalized E-learning",
+    period: "2024 — present",
+    brief:
+      "Full-Stack GenAI learning platform that provides personalized learning experiences, problem recommendations, detailed explanations and personalized feedback to help users with interview preparation.",
+    bullets: [
+      "Question generation + stepwise explanations",
+      "Multiple agents working collaboratively",
+      "FastAPI API with evaluation traces",
+      "Auth + data layer on Supabase",
+      "Problem recommendation engine that curates LeetCode problems, slashing user search time by 60%",
+      "Interactive analytics dashboard to visualize progress, boosting challenge completion rates by 40%"
+    ],
+    stack: ["Next.js", "TypeScript", "React", "shadcn-ui", "TailwindCSS", "FastAPI", "Python", "Supabase", "PostgreSQL", "Vercel"],
+    links: { demo: "https://algoace-dev.vercel.app/", github: "https://github.com/YasinzHyper/AlgoAce" },
+    media: {
+      image: "/Portfolio/images/projects/algoace-preview.jpg",
+      video: "/Portfolio/videos/projects/algoace-demo.mp4",
+      alt: "AlgoAce dashboard showing AI-generated questions and explanations"
+    },
+  },
   {
     id: "schemafit",
     title: "schemafit",
@@ -131,29 +156,6 @@ const PROJECTS: Project[] = [
         "    + .github/workflows/release.yml",
         "    + .github/dependabot.yml",
       ],
-    },
-  },
-  {
-    id: "algoace",
-    title: "AlgoAce",
-    tagline: "Multi-Agent RAG Framework for Personalized E-learning",
-    period: "2024 — present",
-    brief:
-      "Full-Stack GenAI learning platform that provides personalized learning experiences, problem recommendations, detailed explanations and personalized feedback to help users with interview preparation.",
-    bullets: [
-      "Question generation + stepwise explanations",
-      "Multiple agents working collaboratively",
-      "FastAPI API with evaluation traces",
-      "Auth + data layer on Supabase",
-      "Problem recommendation engine that curates LeetCode problems, slashing user search time by 60%",
-      "Interactive analytics dashboard to visualize progress, boosting challenge completion rates by 40%"
-    ],
-    stack: ["Next.js", "TypeScript", "React", "shadcn-ui", "TailwindCSS", "FastAPI", "Python", "Supabase", "PostgreSQL", "Vercel"],
-    links: { demo: "https://github.com/YasinzHyper/AlgoAce", github: "https://github.com/YasinzHyper/AlgoAce" },
-    media: {
-      image: "/Portfolio/images/projects/algoace-preview.jpg",
-      video: "/Portfolio/videos/projects/algoace-demo.mp4",
-      alt: "AlgoAce dashboard showing AI-generated questions and explanations"
     },
   },
   {

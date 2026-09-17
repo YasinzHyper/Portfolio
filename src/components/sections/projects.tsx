@@ -37,6 +37,9 @@ import {
   SiSocketdotio,
   SiVercel,
   SiShadcnui,
+  SiVitest,
+  SiGithubactions,
+  SiJson,
 } from "react-icons/si";
 
 // ------------------------------
@@ -55,10 +58,81 @@ export type Project = {
     image?: string; // preview image (shows on cards)
     video?: string; // video preview (shows in dialog)
     alt?: string; // alt text for accessibility
+    terminal?: string[]; // CLI session preview, used when there is no image
   };
 };
 
 const PROJECTS: Project[] = [
+  {
+    id: "schemafit",
+    title: "schemafit",
+    tagline: "Linter for LLM structured-output JSON Schemas",
+    period: "2026",
+    brief:
+      "Open-source CLI and library that checks a JSON Schema against the structured-output and tool-calling rules of OpenAI, Anthropic, and Gemini, so incompatible schemas are caught in CI instead of by a 400 from the API.",
+    bullets: [
+      "Separate rule sets for OpenAI (strict mode), Anthropic, and Gemini, covering optional properties, recursion, numeric and string constraints, formats, and size limits",
+      "Every rule cites the official provider docs and the date it was last verified; the rules reference is generated from that metadata",
+      "Errors only when the docs explicitly forbid a construct; undocumented or risky ones are warnings that explain why",
+      "Finds the schema inside OpenAI tools and response_format, Anthropic tools, and MCP tool definitions",
+      "Each finding has a JSON Pointer path and a concrete fix hint",
+      "CI-ready: pretty or JSON output, stdin input, meaningful exit codes, and --max-warnings",
+      "Typed library API (lint) for asserting schema portability in unit tests",
+      "Zero runtime dependencies, with a Vitest suite per provider and for the CLI",
+    ],
+    stack: ["TypeScript", "Node.js", "JSON Schema", "Vitest", "GitHub Actions"],
+    links: { github: "https://github.com/YasinzHyper/schemafit" },
+    media: {
+      alt: "schemafit CLI output listing OpenAI, Anthropic, and Gemini compatibility errors for a JSON Schema",
+      terminal: [
+        "$ npx schemafit examples/ticket.json",
+        "",
+        "OpenAI     ✗ 5 errors, 3 warnings",
+        "  error  openai/all-required",
+        "  error  openai/unsupported-format",
+        "Anthropic  ✗ 9 errors, 1 warning",
+        "  error  anthropic/no-recursive-schemas",
+        "  error  anthropic/no-numeric-constraints",
+        "Gemini     ▲ compatible, 5 warnings",
+        "  warn   gemini/undocumented-keyword",
+      ],
+    },
+  },
+  {
+    id: "ossready",
+    title: "ossready",
+    tagline: "Scaffold production-ready open-source repos in one command",
+    period: "2026",
+    brief:
+      "Open-source TypeScript CLI that generates the OSS hygiene a public GitHub repo is expected to have (license, CI and release workflows, issue and PR templates, contributing guide, security policy, Dependabot) around a TypeScript project that builds.",
+    bullets: [
+      "One command (npx ossready init my-lib) writes 17 files, ready to push",
+      "GitHub Actions CI, a tag-triggered release workflow, CODEOWNERS, and weekly Dependabot updates for npm and Actions",
+      "LICENSE, README, CONTRIBUTING, CHANGELOG, SECURITY, and CODE_OF_CONDUCT generated from project metadata",
+      "MIT or Apache-2.0 licensing; npm, pnpm, or bun as the package manager",
+      "--dry-run to preview the file plan and --force to overwrite existing files deliberately",
+      "Publish workflow that tests, builds, and releases to npm with provenance",
+    ],
+    stack: ["TypeScript", "Node.js", "Vitest", "GitHub Actions"],
+    links: { github: "https://github.com/YasinzHyper/ossready" },
+    media: {
+      alt: "ossready dry run listing the files it would scaffold",
+      terminal: [
+        "$ npx ossready init my-lib --dry-run",
+        "",
+        "✓ Dry run for \"my-lib\" → ~/code/my-lib",
+        "",
+        "  Would write (17):",
+        "    + LICENSE",
+        "    + README.md",
+        "    + SECURITY.md",
+        "    + CODE_OF_CONDUCT.md",
+        "    + .github/workflows/ci.yml",
+        "    + .github/workflows/release.yml",
+        "    + .github/dependabot.yml",
+      ],
+    },
+  },
   {
     id: "algoace",
     title: "AlgoAce",
@@ -210,6 +284,46 @@ function VideoPreview({
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+// ------------------------------
+// Terminal Preview Component
+// ------------------------------
+function terminalLineClass(line: string) {
+  const t = line.trim();
+  if (t.startsWith("$")) return "text-white";
+  if (t.startsWith("error") || t.includes("✗")) return "text-rose-300";
+  if (t.startsWith("warn") || t.includes("▲")) return "text-amber-300";
+  if (t.startsWith("+") || t.startsWith("✓")) return "text-emerald-300";
+  return "text-white/70";
+}
+
+function TerminalPreview({ lines, title, size = "sm" }: { lines: string[]; title: string; size?: "sm" | "lg" }) {
+  return (
+    <div
+      className="flex h-full w-full flex-col bg-[#0b0d14]"
+      style={{ fontFamily: 'ui-monospace, "Cascadia Code", Consolas, "SFMono-Regular", Menlo, monospace' }}
+    >
+      <div className="flex h-8 shrink-0 items-center gap-1.5 border-b border-white/10 bg-white/[0.04] px-3">
+        <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
+        <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
+        <span className="h-2.5 w-2.5 rounded-full bg-green-400/80" />
+        <span className="ml-2 truncate text-[10px] text-white/50">{title}</span>
+      </div>
+      <pre
+        className={cn(
+          "min-h-0 flex-1 overflow-hidden px-4 py-3 [font-family:inherit] [mask-image:linear-gradient(to_bottom,black_75%,transparent)]",
+          size === "lg" ? "text-xs leading-6 sm:text-sm sm:leading-7" : "text-[10.5px] leading-[1.15rem]",
+        )}
+      >
+        {lines.map((line, i) => (
+          <div key={i} className={cn("whitespace-pre", terminalLineClass(line))}>
+            {line || " "}
+          </div>
+        ))}
+      </pre>
     </div>
   );
 }
@@ -440,8 +554,10 @@ function CardCover({ project, fixedHeight }: { project: Project; fixedHeight: nu
             src={project.media.image} 
             alt={project.media.alt || `${project.title} preview`} 
             fill 
-            className="object-cover" 
+            className="object-cover"
           />
+        ) : project.media?.terminal ? (
+          <TerminalPreview lines={project.media.terminal} title={project.title} />
         ) : (
           <div className="flex h-full w-full items-center justify-center text-xs text-white/70 bg-gradient-to-br from-indigo-500/10 via-fuchsia-500/10 to-teal-400/10">
             {project.title} Preview
@@ -565,8 +681,10 @@ function ProjectDialog({
                         src={project.media.image} 
                         alt={project.media.alt || `${project.title} screenshot`} 
                         fill 
-                        className="object-cover" 
+                        className="object-cover"
                       />
+                    ) : project.media?.terminal ? (
+                      <TerminalPreview lines={project.media.terminal} title={project.title} size="lg" />
                     ) : (
                       <div className="relative h-full w-full">
                         <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/15 via-fuchsia-500/15 to-teal-400/15" />
@@ -693,6 +811,9 @@ const ICONS: Record<string, IconType> = {
   "Socket.io": SiSocketdotio,
   Vercel: SiVercel,
   "shadcn-ui": SiShadcnui,
+  Vitest: SiVitest,
+  "GitHub Actions": SiGithubactions,
+  "JSON Schema": SiJson,
 };
 
 function TechPill({ name }: { name: string }) {

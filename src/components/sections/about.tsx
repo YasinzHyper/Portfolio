@@ -24,7 +24,7 @@ export function AboutSection() {
       icon: Cpu,
       title: "What I build",
       description:
-        "Full-stack apps with Next.js, FastAPI, and Flutter. I add realtime or GenAI when it clearly helps—like AlgoAce (multi-agent RAG for DSA).",
+        "Full-stack apps with Next.js, Django, and FastAPI, plus open-source CLIs like schemafit. I add realtime or GenAI when it clearly helps—like AlgoAce (multi-agent RAG for DSA).",
     },
     {
       icon: Users,
@@ -36,7 +36,7 @@ export function AboutSection() {
       icon: Gauge,
       title: "What I'm learning",
       description:
-        "Deepening my systems engineering skills as an SDE Intern at Oracle, working on large-scale retail planning infrastructure and exploring distributed system design.",
+        "Growing as a Full Stack Engineer at onsemi, working with workflow orchestration (Airflow) and Kubernetes, and learning how to design systems that stay reliable as they scale.",
     },
   ];
 
@@ -74,12 +74,12 @@ export function AboutSection() {
             How I got here
           </h2>
           <div className="mt-4 text-pretty text-white/75">
-            I&apos;m Yasin —<FlipWords words={words} className="text-white font-medium"/>and final year student from Bengaluru who&apos;s always enjoyed turning
+            I&apos;m Yasin —<FlipWords words={words} className="text-white font-medium"/>and recent graduate from Bengaluru who&apos;s always enjoyed turning
             small ideas into tools people can use. That curiosity led me to study ISE at <b>MSRIT</b>,
             spend a year at <b>xAI</b> as an AI Trainer, conduct research with <b>Samsung Research</b>,
-            intern as a Technology Apprentice at <b>Morgan Stanley</b>,
-            and now grow as an SDE Intern at <b>Oracle</b>.
-            Along the way, I&apos;ve built <b>AlgoAce</b> (a multi-agent RAG platform for DSA learning) and <b>PrimeEstate</b> (end-to-end real-estate app: secure auth, listings, favorites, profiles, chat, and powerful search).
+            intern at <b>Morgan Stanley</b> and <b>Oracle</b>,
+            and now build full-stack platforms as a Full Stack Engineer at <b>onsemi</b>.
+            Along the way, I&apos;ve built <b>AlgoAce</b> (a multi-agent RAG platform for DSA learning), <b>PrimeEstate</b> (end-to-end real-estate app: secure auth, listings, favorites, profiles, chat, and powerful search), and open-source CLIs <b>schemafit</b> and <b>ossready</b>.
           </div>
         </motion.div>
 
@@ -113,6 +113,9 @@ export function AboutSection() {
               <h4 className="text-lg font-medium text-white/90">Milestones</h4>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary" className="bg-white/10 text-white hover:bg-white/20">
+                  onsemi · Full Stack Engineer
+                </Badge>
+                <Badge variant="secondary" className="bg-white/10 text-white hover:bg-white/20">
                   Oracle · SDE Intern
                 </Badge>
                 <Badge variant="secondary" className="bg-white/10 text-white hover:bg-white/20">
@@ -132,6 +135,9 @@ export function AboutSection() {
                 </Badge>
                 <Badge variant="secondary" className="bg-white/10 text-white hover:bg-white/20">
                   Creator · PrimeEstate
+                </Badge>
+                <Badge variant="secondary" className="bg-white/10 text-white hover:bg-white/20">
+                  Open source · schemafit, ossready
                 </Badge>
                 <Badge variant="secondary" className="bg-white/10 text-white hover:bg-white/20">
                   Microsoft · Learn Student Ambassador
@@ -198,7 +204,7 @@ export function AboutSection() {
             { k: "Focus", v: "Full-stack · GenAI" },
             { k: "LeetCode", v: "600+ (Top ~8%)" },
             { k: "Research", v: "Samsung PRISM" },
-            { k: "Now", v: "Oracle · SDE Intern" },
+            { k: "Now", v: "onsemi · Full Stack" },
           ].map((s) => (
             <div
               key={s.k}

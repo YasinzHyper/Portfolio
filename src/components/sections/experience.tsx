@@ -41,18 +41,43 @@ type Education = {
 
 const EXPERIENCES: Experience[] = [
   {
+    org: "onsemi",
+    role: "Full Stack Engineer",
+    period: "Jul 2026 — Present",
+    location: "Bengaluru · Hybrid",
+    highlights: [
+      "Building a full-stack platform that unifies project management, simulation, and compliance checks for power module design, replacing a fragmented multi-tool workflow.",
+      "Working across Next.js, Django, PostgreSQL, Airflow, and Kubernetes.",
+    ],
+    tech: ["Next.js", "Django", "PostgreSQL", "Airflow", "Kubernetes"],
+    companyUrl: "https://www.onsemi.com/",
+    logoUrl: "https://www.google.com/s2/favicons?domain=onsemi.com&sz=128",
+  },
+  {
     org: "Oracle",
     role: "SDE Intern",
-    period: "Jan 2026 — Present",
+    period: "Jan 2026 — Jul 2026",
     location: "Bengaluru · Hybrid",
     highlights: [
       "Engineered 50+ automated test scenarios for Oracle RPAS, expanding defect detection coverage by 30% and significantly reducing escaped bugs in the C++/Java enterprise backend.",
       "Resolved 10+ high-severity bugs across RPAS server modules in C++ and Java, directly improving system stability in a large-scale retail planning platform.",
-      "Built Codex-assisted workflows via MCP with custom RPAS skills for automated code review, debugging and test scripting, cutting manual debugging effort by 50%.",
+      "Built Codex-assisted workflows via MCP with custom RPAS skills for automated code review and test scripting, cutting manual debugging effort by 50%.",
     ],
     tech: ["C++", "Java", "Oracle DB", "PL/SQL", "Shell Scripting"],
     companyUrl: "https://www.oracle.com/",
     logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eRETWKNQ0IuSETVDffHht0BpBthJtTH9Fg&s",
+  },
+  {
+    org: "LabelBox",
+    role: "AI Trainer (Coding)",
+    period: "July 2024 — Present",
+    location: "Remote",
+    highlights: [
+      "Enhanced coding proficiency of frontier models for leading AI labs (Google Deepmind, OpenAI, etc.) through sophisticated prompt engineering and rigorous model evaluation methodologies",
+    ],
+    tech: ["JavaScript", "Python", "Prompt Engineering", "Model Evaluation"],
+    companyUrl: "https://labelbox.com/",
+    logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSveVLbjIDVSUEXOEgR3tGuZh2FFkxvy99L5A&s",
   },
   {
     org: "Morgan Stanley",
@@ -66,18 +91,6 @@ const EXPERIENCES: Experience[] = [
     tech: ["TypeScript", "Java", "React", "Spring Boot", "FastAPI", "Python"],
     companyUrl: "https://www.morganstanley.com/",
     logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg4b2xFrY7mhOS9pGOnckG88R0ZzHpzYZ7hA&s",
-  },
-  {
-    org: "LabelBox",
-    role: "AI Trainer (Coding)",
-    period: "July 2024 — Present",
-    location: "Remote",
-    highlights: [
-      "Enhanced coding proficiency of frontier models for leading AI labs (Google Deepmind, OpenAI, etc.) through sophisticated prompt engineering and rigorous model evaluation methodologies",
-    ],
-    tech: ["JavaScript", "Python", "Prompt Engineering", "Model Evaluation"],
-    companyUrl: "https://labelbox.com/",
-    logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSveVLbjIDVSUEXOEgR3tGuZh2FFkxvy99L5A&s",
   },
   {
     org: "xAI",
@@ -110,9 +123,9 @@ const EXPERIENCES: Experience[] = [
 const EDUCATION: Education = {
   school: "Ramaiah Institute of Technology",
   degree: "B.E. Information Science & Engineering",
-  period: "2022 — 2026 (expected)",
+  period: "2022 — 2026",
   location: "Bengaluru, Karnataka",
-  gpa: "CGPA 9.26",
+  gpa: "CGPA 9.30",
   courses: [
     "Machine Learning",
     "Distributed Systems",

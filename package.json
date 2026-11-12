@@ -6,6 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "preview": "node scripts/preview.mjs",
+    "typecheck": "tsc --noEmit",
     "lint": "next lint"
   },
   "dependencies": {

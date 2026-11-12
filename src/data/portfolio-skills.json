@@ -1,0 +1,286 @@
+[
+  {
+    "name": "JavaScript",
+    "category": "Languages",
+    "logo": "/portfolio/logos/javascript.svg",
+    "projects": [
+      "PrimeEstate",
+      "DarkGuardian"
+    ]
+  },
+  {
+    "name": "TypeScript",
+    "category": "Languages",
+    "logo": "/portfolio/logos/typescript.svg",
+    "projects": [
+      "AlgoAce",
+      "schemafit",
+      "ossready"
+    ]
+  },
+  {
+    "name": "Python",
+    "category": "Languages",
+    "logo": "/portfolio/logos/python.svg",
+    "projects": [
+      "AlgoAce",
+      "DarkGuardian"
+    ]
+  },
+  {
+    "name": "Java",
+    "category": "Languages",
+    "logo": "/portfolio/logos/java.svg",
+    "projects": []
+  },
+  {
+    "name": "C",
+    "category": "Languages",
+    "logo": "/portfolio/logos/c.svg",
+    "projects": []
+  },
+  {
+    "name": "C++",
+    "category": "Languages",
+    "logo": "/portfolio/logos/cplusplus.svg",
+    "projects": []
+  },
+  {
+    "name": "Dart",
+    "category": "Languages",
+    "logo": "/portfolio/logos/dart.svg",
+    "projects": [
+      "IntelliCam"
+    ]
+  },
+  {
+    "name": "Next.js",
+    "category": "Web/Frontend",
+    "logo": "/portfolio/logos/nextdotjs.svg",
+    "projects": [
+      "AlgoAce"
+    ]
+  },
+  {
+    "name": "React",
+    "category": "Web/Frontend",
+    "logo": "/portfolio/logos/react.svg",
+    "projects": [
+      "AlgoAce",
+      "PrimeEstate"
+    ]
+  },
+  {
+    "name": "TailwindCSS",
+    "category": "Web/Frontend",
+    "logo": "/portfolio/logos/tailwindcss.svg",
+    "projects": [
+      "AlgoAce",
+      "PrimeEstate"
+    ]
+  },
+  {
+    "name": "Vite",
+    "category": "Web/Frontend",
+    "logo": "/portfolio/logos/vite.svg",
+    "projects": [
+      "PrimeEstate"
+    ]
+  },
+  {
+    "name": "SCSS",
+    "category": "Web/Frontend",
+    "logo": "/portfolio/logos/sass.svg",
+    "projects": []
+  },
+  {
+    "name": "Node.js",
+    "category": "Backend",
+    "logo": "/portfolio/logos/nodedotjs.svg",
+    "projects": [
+      "schemafit",
+      "ossready",
+      "PrimeEstate"
+    ]
+  },
+  {
+    "name": "Express.js",
+    "category": "Backend",
+    "logo": "/portfolio/logos/express.svg",
+    "projects": [
+      "PrimeEstate"
+    ]
+  },
+  {
+    "name": "FastAPI",
+    "category": "Backend",
+    "logo": "/portfolio/logos/fastapi.svg",
+    "projects": [
+      "AlgoAce"
+    ]
+  },
+  {
+    "name": "Flask",
+    "category": "Backend",
+    "logo": "/portfolio/logos/flask.svg",
+    "projects": [
+      "DarkGuardian"
+    ]
+  },
+  {
+    "name": "Flutter",
+    "category": "Mobile",
+    "logo": "/portfolio/logos/flutter.svg",
+    "projects": [
+      "IntelliCam"
+    ]
+  },
+  {
+    "name": "Kotlin",
+    "category": "Mobile",
+    "logo": "/portfolio/logos/kotlin.svg",
+    "projects": []
+  },
+  {
+    "name": "TensorFlow",
+    "category": "AI/ML",
+    "logo": "/portfolio/logos/tensorflow.svg",
+    "projects": []
+  },
+  {
+    "name": "TensorFlow Lite",
+    "category": "AI/ML",
+    "logo": "/portfolio/logos/tensorflow.svg",
+    "projects": [
+      "IntelliCam"
+    ]
+  },
+  {
+    "name": "CrewAI",
+    "category": "AI/ML",
+    "logo": "/portfolio/logos/crewai.svg",
+    "projects": [
+      "AlgoAce"
+    ]
+  },
+  {
+    "name": "Vercel",
+    "category": "Cloud",
+    "logo": "/portfolio/logos/vercel.svg",
+    "projects": [
+      "AlgoAce"
+    ]
+  },
+  {
+    "name": "Azure",
+    "category": "Cloud",
+    "logo": "/portfolio/logos/azure.svg",
+    "projects": []
+  },
+  {
+    "name": "Heroku",
+    "category": "Cloud",
+    "logo": "/portfolio/logos/heroku.svg",
+    "projects": []
+  },
+  {
+    "name": "Firebase",
+    "category": "Cloud",
+    "logo": "/portfolio/logos/firebase.svg",
+    "projects": []
+  },
+  {
+    "name": "Supabase",
+    "category": "Databases",
+    "logo": "/portfolio/logos/supabase.svg",
+    "projects": [
+      "AlgoAce"
+    ]
+  },
+  {
+    "name": "MongoDB",
+    "category": "Databases",
+    "logo": "/portfolio/logos/mongodb.svg",
+    "projects": [
+      "PrimeEstate"
+    ]
+  },
+  {
+    "name": "PostgreSQL",
+    "category": "Databases",
+    "logo": "/portfolio/logos/postgresql.svg",
+    "projects": [
+      "AlgoAce"
+    ]
+  },
+  {
+    "name": "MySQL",
+    "category": "Databases",
+    "logo": "/portfolio/logos/mysql.svg",
+    "projects": []
+  },
+  {
+    "name": "Git",
+    "category": "DevTools",
+    "logo": "/portfolio/logos/git.svg",
+    "projects": []
+  },
+  {
+    "name": "Docker",
+    "category": "DevTools",
+    "logo": "/portfolio/logos/docker.svg",
+    "projects": []
+  },
+  {
+    "name": "Socket.io",
+    "category": "DevTools",
+    "logo": "/portfolio/logos/socketdotio.svg",
+    "projects": [
+      "PrimeEstate"
+    ]
+  },
+  {
+    "name": "Android Studio",
+    "category": "DevTools",
+    "logo": "/portfolio/logos/androidstudio.svg",
+    "projects": [
+      "IntelliCam"
+    ]
+  },
+  {
+    "name": "Unix/Linux",
+    "category": "DevTools",
+    "logo": "/portfolio/logos/linux.svg",
+    "projects": []
+  },
+  {
+    "name": "VS Code",
+    "category": "DevTools",
+    "logo": "/portfolio/logos/vscode.svg",
+    "projects": []
+  },
+  {
+    "name": "Cursor",
+    "category": "DevTools",
+    "logo": "/portfolio/logos/cursor.svg",
+    "projects": []
+  },
+  {
+    "name": "Postman",
+    "category": "DevTools",
+    "logo": "/portfolio/logos/postman.svg",
+    "projects": []
+  },
+  {
+    "name": "Figma",
+    "category": "DevTools",
+    "logo": "/portfolio/logos/figma.svg",
+    "projects": []
+  },
+  {
+    "name": "Jenkins",
+    "category": "DevTools",
+    "logo": "/portfolio/logos/jenkins.svg",
+    "projects": []
+  }
+]

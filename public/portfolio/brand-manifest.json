@@ -1,0 +1,621 @@
+{
+  "note": "Local brand assets. Logos remain trademarks of their respective owners. SVG geometry is sourced from official brand sites, Simple Icons, Devicon, or LobeHub; no generated brand approximations.",
+  "assets": [
+    {
+      "file": "logos/javascript.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "javascript",
+      "source": "https://github.com/voodootikigod/logo.js/blob/1544bdeed6d618a6cfe4f0650d04ab8d9cfa76d9/js.svg",
+      "guidelines": null,
+      "license": {
+        "type": "MIT"
+      },
+      "renderColor": "#F7DF1E"
+    },
+    {
+      "file": "logos/typescript.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "typescript",
+      "source": "https://www.typescriptlang.org/branding",
+      "guidelines": "https://www.typescriptlang.org/branding",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#3178C6"
+    },
+    {
+      "file": "logos/python.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "python",
+      "source": "https://www.python.org/community/logos/",
+      "guidelines": "https://www.python.org/community/logos/",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#3776AB"
+    },
+    {
+      "file": "logos/openjdk.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "openjdk",
+      "source": "https://hg.openjdk.java.net/duke/duke/file/ca00f100dafc/vector/Agent.svg",
+      "guidelines": null,
+      "license": {
+        "type": "BSD-3-Clause"
+      },
+      "renderColor": "#000000"
+    },
+    {
+      "file": "logos/c.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "c",
+      "source": "https://commons.wikimedia.org/wiki/File:The_C_Programming_Language_logo.svg",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#A8B9CC"
+    },
+    {
+      "file": "logos/cplusplus.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "cplusplus",
+      "source": "https://github.com/isocpp/logos/tree/64ef037049f87ac74875dbe72695e59118b52186",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#00599C"
+    },
+    {
+      "file": "logos/dart.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "dart",
+      "source": "https://github.com/dart-lang/site-shared/tree/18458ff440afd3d06f04e5cb871c4c5eda29c9d5/src/_assets/image/dart/logo",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#0175C2"
+    },
+    {
+      "file": "logos/nextdotjs.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "nextdotjs",
+      "source": "https://vercel.com/design/brands#next-js",
+      "guidelines": "https://vercel.com/design/brands#next-js",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#E7EBF5"
+    },
+    {
+      "file": "logos/react.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "react",
+      "source": "https://github.com/facebook/create-react-app/blob/282c03f9525fdf8061ffa1ec50dce89296d916bd/test/fixtures/relative-paths/src/logo.svg",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#61DAFB"
+    },
+    {
+      "file": "logos/tailwindcss.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "tailwindcss",
+      "source": "https://tailwindcss.com/brand",
+      "guidelines": "https://tailwindcss.com/brand",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#06B6D4"
+    },
+    {
+      "file": "logos/vite.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "vite",
+      "source": "https://github.com/voidzero-dev/community-design-resources/blob/55902097229cf01cf2a4ceb376f992f5cf306756/brand-assets/vite/vite-icon-color-bracketless.svg",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#9135FF"
+    },
+    {
+      "file": "logos/sass.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "sass",
+      "source": "https://sass-lang.com/styleguide/brand",
+      "guidelines": "https://sass-lang.com/styleguide/brand",
+      "license": {
+        "type": "CC-BY-NC-SA-3.0"
+      },
+      "renderColor": "#CC6699"
+    },
+    {
+      "file": "logos/nodedotjs.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "nodedotjs",
+      "source": "https://nodejs.org/en/about/branding",
+      "guidelines": "https://nodejs.org/en/about/branding",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#5FA04E"
+    },
+    {
+      "file": "logos/express.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "express",
+      "source": "https://github.com/openjs-foundation/artwork/blob/3816245ebbf4707bdafde748350ac8476b6b5b62/projects/express/express-icon-black.svg",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#E7EBF5"
+    },
+    {
+      "file": "logos/fastapi.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "fastapi",
+      "source": "https://github.com/tiangolo/fastapi/blob/ffb4f77a11f83132b521ba0aac6c95792c19e797/docs/en/docs/img/icon-white.svg",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#009688"
+    },
+    {
+      "file": "logos/flask.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "flask",
+      "source": "https://github.com/pallets/flask/blob/85c5d93cbd049c4bd0679c36fd1ddcae8c37b642/docs/_static/flask-icon.svg",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#E7EBF5"
+    },
+    {
+      "file": "logos/flutter.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "flutter",
+      "source": "https://flutter.dev/brand",
+      "guidelines": "https://flutter.dev/brand",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#02569B"
+    },
+    {
+      "file": "logos/kotlin.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "kotlin",
+      "source": "https://www.jetbrains.com/company/brand/logos/",
+      "guidelines": "https://www.jetbrains.com/company/brand/",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#7F52FF"
+    },
+    {
+      "file": "logos/tensorflow.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "tensorflow",
+      "source": "https://www.tensorflow.org",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#FF6F00"
+    },
+    {
+      "file": "logos/tensorflow.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "tensorflow",
+      "source": "https://www.tensorflow.org",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#FF6F00"
+    },
+    {
+      "file": "logos/crewai.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "crewai",
+      "source": "https://github.com/crewAIInc/crewAI/blob/a7696d5aed7a85333735dde370fd9f0547aaabf5/docs/favicon.svg",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#FF5A50"
+    },
+    {
+      "file": "logos/vercel.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "vercel",
+      "source": "https://vercel.com/geist/brands",
+      "guidelines": "https://vercel.com/geist/brands",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#E7EBF5"
+    },
+    {
+      "file": "logos/heroku.svg",
+      "collection": "Simple Icons",
+      "version": "13.21.0",
+      "slug": "heroku",
+      "source": "https://devcenter.heroku.com/articles/heroku-brand-guidelines#logos",
+      "guidelines": "https://devcenter.heroku.com/articles/heroku-brand-guidelines",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#E7EBF5",
+      "note": "Light monochrome variant for dark skill tiles."
+    },
+    {
+      "file": "logos/firebase.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "firebase",
+      "source": "https://firebase.google.com/brand-guidelines",
+      "guidelines": "https://firebase.google.com/brand-guidelines",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#DD2C00"
+    },
+    {
+      "file": "logos/supabase.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "supabase",
+      "source": "https://github.com/supabase/supabase/blob/4031a7549f5d46da7bc79c01d56be4177dc7c114/packages/common/assets/images/supabase-logo-wordmark--light.svg",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#3FCF8E"
+    },
+    {
+      "file": "logos/mongodb.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "mongodb",
+      "source": "https://www.mongodb.com/pressroom",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#47A248"
+    },
+    {
+      "file": "logos/postgresql.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "postgresql",
+      "source": "https://wiki.postgresql.org/wiki/Logo",
+      "guidelines": "https://www.postgresql.org/about/policies/trademarks/",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#4169E1"
+    },
+    {
+      "file": "logos/mysql.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "mysql",
+      "source": "https://www.mysql.com/about/legal/logos.html",
+      "guidelines": "https://www.mysql.com/about/legal/logos.html",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#4479A1"
+    },
+    {
+      "file": "logos/git.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "git",
+      "source": "https://git-scm.com/community/logos",
+      "guidelines": null,
+      "license": {
+        "type": "CC-BY-3.0"
+      },
+      "renderColor": "#F03C2E"
+    },
+    {
+      "file": "logos/docker.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "docker",
+      "source": "https://www.docker.com/company/newsroom/media-resources",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#2496ED"
+    },
+    {
+      "file": "logos/socketdotio.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "socketdotio",
+      "source": "https://socket.io",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#E7EBF5"
+    },
+    {
+      "file": "logos/androidstudio.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "androidstudio",
+      "source": "https://developer.android.com/studio",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#3DDC84"
+    },
+    {
+      "file": "logos/linux.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "linux",
+      "source": "https://www.linuxfoundation.org/the-linux-mark/",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#E7EBF5"
+    },
+    {
+      "file": "logos/cursor.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "cursor",
+      "source": "https://cursor.com/brand",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#E7EBF5"
+    },
+    {
+      "file": "logos/postman.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "postman",
+      "source": "https://www.getpostman.com/resources/media-assets/",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#FF6C37"
+    },
+    {
+      "file": "logos/figma.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "figma",
+      "source": "https://www.figma.com/using-the-figma-brand/",
+      "guidelines": "https://www.figma.com/using-the-figma-brand/",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#F24E1E"
+    },
+    {
+      "file": "logos/jenkins.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "jenkins",
+      "source": "https://get.jenkins.io/art/",
+      "guidelines": "https://www.jenkins.io/press/",
+      "license": {
+        "type": "CC-BY-SA-3.0"
+      },
+      "renderColor": "#D24939"
+    },
+    {
+      "file": "logos/oracle.svg",
+      "collection": "Simple Icons",
+      "version": "13.21.0",
+      "slug": "oracle",
+      "source": "https://www.oracle.com/opn/index.html",
+      "guidelines": "https://www.oracle.com/legal/logos.html",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#F80000"
+    },
+    {
+      "file": "logos/samsung.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "samsung",
+      "source": "https://www.samsung.com/us/about-us/brand-identity/logo/",
+      "guidelines": "https://www.samsung.com/us/about-us/brand-identity/logo/",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#1428A0",
+      "presentation": "ViewBox fitted to the supplied wordmark; source path geometry unchanged."
+    },
+    {
+      "file": "logos/leetcode.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "leetcode",
+      "source": "https://leetcode.com/store",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#FFA116"
+    },
+    {
+      "file": "logos/microsoft.svg",
+      "collection": "Simple Icons",
+      "version": "11.15.0",
+      "slug": "microsoft",
+      "source": "https://developer.microsoft.com",
+      "guidelines": "https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#12151C"
+    },
+    {
+      "file": "logos/cisco.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "cisco",
+      "source": "https://www.cisco.com",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#1BA0D7"
+    },
+    {
+      "file": "logos/openai.svg",
+      "collection": "Simple Icons",
+      "version": "13.21.0",
+      "slug": "openai",
+      "source": "https://openai.com/brand",
+      "guidelines": "https://openai.com/brand",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#12151C"
+    },
+    {
+      "file": "logos/anthropic.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "anthropic",
+      "source": "https://www.anthropic.com",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#12151C"
+    },
+    {
+      "file": "logos/googlegemini.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "googlegemini",
+      "source": "https://gemini.google.com",
+      "guidelines": null,
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#8E75B2"
+    },
+    {
+      "file": "logos/github.svg",
+      "collection": "Simple Icons",
+      "version": "16.37.0",
+      "slug": "github",
+      "source": "https://github.com/logos",
+      "guidelines": "https://github.com/logos",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#E7EBF5"
+    },
+    {
+      "file": "logos/linkedin.svg",
+      "collection": "Simple Icons",
+      "version": "13.21.0",
+      "slug": "linkedin",
+      "source": "https://brand.linkedin.com",
+      "guidelines": "https://brand.linkedin.com/policies",
+      "license": {
+        "type": "CC0-1.0 (collection)"
+      },
+      "renderColor": "#71B7F2"
+    },
+    {
+      "file": "logos/onsemi.svg",
+      "collection": "Official brand website",
+      "source": "https://www.onsemi.com/images/logo/onsemi_logo_full_color.svg",
+      "license": "Respective brand ownership"
+    },
+    {
+      "file": "logos/labelbox.svg",
+      "collection": "Official brand website",
+      "source": "https://labelbox.com/static/images/global/logos/logo-full-black.svg",
+      "license": "Respective brand ownership"
+    },
+    {
+      "file": "logos/labelbox-icon.svg",
+      "collection": "Official brand website",
+      "source": "https://labelbox.com/static/images/global/logos/logo-icon-black.svg",
+      "license": "Respective brand ownership"
+    },
+    {
+      "file": "logos/morganstanley.svg",
+      "collection": "Official brand website",
+      "source": "https://www.morganstanley.com/etc.clientlibs/msdotcomr5/clientlibs/components/site/resources/svg/logo/logo-dark.svg",
+      "license": "Respective brand ownership"
+    },
+    {
+      "file": "logos/azure.svg",
+      "collection": "Devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg",
+      "license": "MIT collection; brand trademark retained"
+    },
+    {
+      "file": "logos/vscode.svg",
+      "collection": "Devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
+      "license": "MIT collection; brand trademark retained"
+    },
+    {
+      "file": "logos/xai.svg",
+      "collection": "LobeHub Icons",
+      "source": "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/xai.svg",
+      "license": "MIT collection; brand trademark retained",
+      "note": "Historical xAI identity matching employment period."
+    },
+    {
+      "file": "logos/java.svg",
+      "collection": "Devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+      "license": "MIT collection; brand trademark retained",
+      "note": "Full-colour Java coffee-cup mark for legibility on a dark surface."
+    }
+  ]
+}

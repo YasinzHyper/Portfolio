@@ -1,0 +1,24 @@
+/* Visible orbital streams and ambient light behind the complete portfolio. */
+.scene-backdrop{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;contain:strict}
+.scene-backdrop .ambient-cloud{position:absolute;width:min(92vw,1200px);height:min(95vh,950px);border-radius:50%;opacity:.74;will-change:transform;animation:portfolio-ambient-drift 17s ease-in-out infinite alternate}
+.scene-backdrop .ambient-cloud:first-child{left:-34%;top:-34%;background:radial-gradient(ellipse,#8064c947,transparent 69%);animation-delay:-6s}
+.scene-backdrop .ambient-cloud:nth-child(2){right:-42%;top:0;background:radial-gradient(ellipse,#2d9e9c3b,transparent 69%);animation-duration:21s;animation-delay:-14s}
+.scene-backdrop .ambient-cloud:nth-child(3){left:10%;bottom:-64%;background:radial-gradient(ellipse,#7964bd40,transparent 69%);animation-duration:19s;animation-delay:-9s}
+.scene-backdrop .ambient-streams{position:absolute;inset:0;width:100%;height:100%;overflow:visible;mask-image:radial-gradient(ellipse at 50% 42%,#0004 0%,#0009 42%,#000 78%);-webkit-mask-image:radial-gradient(ellipse at 50% 42%,#0004 0%,#0009 42%,#000 78%)}
+.scene-backdrop .ambient-stream{--stream-color:#a99bf5;--stream-duration:12s;--stream-delay:-2s;fill:none;stroke:var(--stream-color);stroke-linecap:round}
+.scene-backdrop .ambient-stream-2{--stream-color:#74ddcf;--stream-duration:14s;--stream-delay:-8s}
+.scene-backdrop .ambient-stream-3{--stream-color:#a59be8;--stream-duration:15s;--stream-delay:-5s}
+.scene-backdrop .ambient-stream-4{--stream-color:#73c9cb;--stream-duration:17s;--stream-delay:-12s}
+.scene-backdrop .ambient-stream-rail{stroke-width:.8;opacity:.13}
+.scene-backdrop .ambient-stream-travel{stroke-dasharray:56 444;animation:portfolio-stream-travel var(--stream-duration) linear var(--stream-delay) infinite}
+.scene-backdrop .ambient-stream-halo{stroke-width:9;opacity:.05}
+.scene-backdrop .ambient-stream-core{stroke-width:1.5;opacity:.55}
+.scene-backdrop canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.8}
+.scene-backdrop .ambient-grain{position:absolute;inset:0;opacity:.1;background-image:radial-gradient(#b8b0de35 .5px,transparent .6px);background-size:7px 7px;mask-image:linear-gradient(#0005,transparent 75%);-webkit-mask-image:linear-gradient(#0005,transparent 75%)}
+.portfolio-main,.portfolio-footer{position:relative;z-index:1}
+.scene-backdrop[data-motion-paused="true"] *,.motion-paused .scene-backdrop *,.page-hidden .scene-backdrop *{animation-play-state:paused!important}
+.page-hidden .h-art *,.page-hidden .sf-preview *{animation-play-state:paused!important}
+@keyframes portfolio-ambient-drift{0%{transform:translate3d(-2vw,-3vh,0) scale(.94)}100%{transform:translate3d(10vw,12vh,0) scale(1.14)}}
+@keyframes portfolio-stream-travel{to{stroke-dashoffset:-500}}
+@media(max-width:650px){.scene-backdrop .ambient-cloud{opacity:.6;animation-duration:22s}.scene-backdrop .ambient-cloud:nth-child(3),.scene-backdrop .ambient-grain,.scene-backdrop .ambient-stream-3,.scene-backdrop .ambient-stream-4{display:none}.scene-backdrop .ambient-streams{opacity:.75}.scene-backdrop .ambient-stream-core{stroke-width:2.5}.scene-backdrop .ambient-stream-halo{stroke-width:12}}
+@media(prefers-reduced-motion:reduce){.scene-backdrop *{animation:none!important}}

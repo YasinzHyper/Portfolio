@@ -1,0 +1,139 @@
+.experience-refined {
+  --ex-border: #a598ff26;
+  --ex-muted: #bdc7db;
+  --ex-body-size: 15px;
+  --ex-support-size: 14px;
+  --ex-meta-size: 13px;
+  --ex-label-size: 12px;
+  --ex-surface: #111625;
+}
+.experience-refined .section-number,.experience-refined .tiny-note { font-size:var(--ex-label-size); letter-spacing:.06em; }
+.experience-refined .tiny-note { color:#b5c1d7; }
+.experience-refined .ex-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:32px; margin-bottom:36px; }
+.experience-refined .ex-heading h2 { margin:0 0 18px; }
+.experience-refined .ex-heading p { margin:0; color:var(--ex-muted); font-size:14px; line-height:1.8; }
+.experience-refined .ex-layout-switch { display:flex; flex:none; padding:4px; gap:3px; border:1px solid var(--ex-border); border-radius:11px; background:#101524; }
+.experience-refined .ex-layout-switch button { display:flex; align-items:center; gap:9px; border:0; border-radius:7px; padding:11px 15px; color:#bdc7db; background:none; font-size:13px; white-space:nowrap; transition:background .2s,color .2s; }
+.experience-refined .ex-layout-switch button[aria-pressed=true] { color:#e5dfff; background:#a598ff1c; box-shadow:0 2px 10px #04061040; }
+.experience-refined .ex-layout-switch button>span { color:#aa9be7; font-size:17px; }
+.experience-refined .ex-layout { display:grid; grid-template-columns:minmax(0,1fr) 300px; align-items:start; gap:30px; }
+.experience-refined .ex-career-column { min-width:0; }
+.experience-refined .ex-sidebar { display:grid; gap:18px; min-width:0; }
+
+/* The rail tracks the viewport's reading line, not an arbitrary timer. */
+.experience-refined .ex-timeline { --ex-track-top:43px; --ex-track-length:calc(100% - 86px); --ex-progress:0; --ex-dot-y:0px; position:relative; list-style:none; padding:0; margin:0; }
+.experience-refined .ex-track-container { position:absolute; inset:0; list-style:none; pointer-events:none; }
+.experience-refined .ex-scroll-track { position:absolute; left:10px; top:var(--ex-track-top); height:var(--ex-track-length); width:2px; border-radius:2px; background:linear-gradient(#a598ff38,#8cd6ce20); }
+.experience-refined .ex-progress-fill { position:absolute; inset:0; transform:scaleY(var(--ex-progress)); transform-origin:top; border-radius:2px; background:linear-gradient(#b1a0fa,#77ded1); box-shadow:0 0 14px #a598ff35; transition:transform .14s linear; }
+.experience-refined .ex-travel-dot { position:absolute; left:-4px; top:-5px; width:10px; height:10px; border-radius:50%; background:#d9f9f0; box-shadow:0 0 0 4px #7edccb1b,0 0 16px #8fe8d9b0,0 0 32px #9a7fe055; transform:translate3d(0,var(--ex-dot-y),0); transition:transform .14s linear; z-index:3; }
+.experience-refined .ex-travel-dot:after { content:""; position:absolute; inset:-5px; border:1px solid #a1e5d450; border-radius:50%; animation:ex-beacon 3s ease-in-out infinite; }
+.experience-refined .ex-timeline-item { position:relative; padding-left:35px; margin-bottom:16px; list-style:none; }
+.experience-refined .ex-timeline-item:last-child { margin-bottom:0; }
+.experience-refined .ex-row-marker { position:absolute; left:6px; top:38px; width:10px; height:10px; border-radius:50%; background:#101522; border:1px solid #8992ac7d; box-shadow:0 0 0 5px #0b0e18; z-index:2; transition:background .3s,border-color .3s,box-shadow .3s; }
+.experience-refined .ex-is-active .ex-row-marker { background:#a99be6; border-color:#d2c6ff; box-shadow:0 0 0 5px #0b0e18,0 0 19px #a598ff45; }
+.experience-refined .ex-is-past .ex-row-marker { background:#3b5e63; border-color:#81c4bb; }
+.experience-refined .ex-role-card { overflow:hidden; border:1px solid var(--ex-border); border-radius:15px; background:linear-gradient(130deg,#141a2aeb,#0f1422e8); box-shadow:0 12px 38px #04070c12; transition:border-color .3s,background .3s; }
+.experience-refined .ex-is-active .ex-role-card { border-color:#a598ff65; background:linear-gradient(130deg,#1b2033,#111929); }
+.experience-refined .ex-timeline-heading { margin:0; font-size:inherit; font-weight:inherit; }
+.experience-refined .ex-role-toggle { width:100%; display:grid; grid-template-columns:104px minmax(0,1fr) auto 14px; align-items:center; gap:18px; text-align:left; padding:23px 21px; border:0; background:none; color:inherit; }
+.experience-refined .ex-role-toggle:hover { background:#a598ff04; }
+/* Flush vector marks use the same monochrome treatment as the hero. */
+.experience-refined .ex-logo { display:flex; align-items:center; justify-content:center; width:104px; height:36px; padding:0; background:none; border:0; box-shadow:none; }
+.experience-refined .ex-logo img { display:block; width:var(--ex-logo-width,92px); max-width:100%; height:32px; object-fit:contain; object-position:center; filter:brightness(0) invert(.9); }
+.experience-refined .ex-logo[data-company=onsemi] { --ex-logo-width:92px; }
+.experience-refined .ex-logo[data-company=labelbox] { --ex-logo-width:92px; }
+.experience-refined .ex-logo[data-company=morganstanley] { --ex-logo-width:104px; }
+.experience-refined .ex-logo[data-company=samsung] { --ex-logo-width:94px; }
+.experience-refined .ex-logo[data-company=oracle] { --ex-logo-width:40px; }
+.experience-refined .ex-logo[data-company=xai] { --ex-logo-width:31px; }
+.experience-refined .ex-role-toggle:hover .ex-logo img,.experience-refined .ex-company[aria-pressed=true] .ex-logo img { filter:brightness(0) invert(1); }
+.experience-refined .ex-summary-copy { min-width:0; flex:1; display:flex; flex-direction:column; gap:6px; }
+.experience-refined .ex-summary-copy>strong { color:#e6eaf5; font-size:16px; line-height:1.5; font-weight:600; letter-spacing:-.015em; }
+.experience-refined .ex-summary-copy>span { display:flex; gap:9px; align-items:center; flex-wrap:wrap; color:#bec9de; font-size:var(--ex-meta-size); line-height:1.5; font-weight:400; }
+.experience-refined .ex-current-label { font:normal var(--ex-label-size)/1.4 ui-monospace,Consolas,monospace; color:#a6eddf; border:1px solid #75d3bb45; border-radius:4px; padding:4px 6px; text-transform:uppercase; letter-spacing:.04em; background:#75d3bb10; }
+.experience-refined .ex-summary-period { color:#c9d3e6; font:500 var(--ex-meta-size)/1.6 ui-monospace,Consolas,monospace; white-space:nowrap; }
+.experience-refined .ex-expand { flex:none; color:#b7a8f2; font-size:19px; font-weight:400; line-height:1; transition:rotate .25s; margin-left:1px; }
+.experience-refined .ex-role-toggle[aria-expanded=true] .ex-expand { rotate:45deg; }
+.experience-refined .ex-role-details:not([hidden]) { animation:ex-details-enter .28s ease both; }
+.experience-refined .ex-role-details[hidden] { display:none; }
+.experience-refined .ex-role-content { padding:28px; }
+.experience-refined .ex-role-details .ex-role-content { padding:0 25px 25px; }
+.experience-refined .ex-detail-meta { display:flex; gap:18px; justify-content:space-between; align-items:center; flex-wrap:wrap; border-top:1px solid var(--ex-border); padding-top:17px; margin-bottom:19px; color:#bdc9df; font-size:var(--ex-meta-size); line-height:1.6; }
+.experience-refined .ex-detail-meta a { color:#d1c4ff; }
+.experience-refined .ex-detail-meta a>span { margin-left:4px; }
+.experience-refined .ex-highlights { margin:0; padding:0; list-style:none; display:grid; gap:14px; }
+.experience-refined .ex-highlights li { position:relative; padding-left:15px; color:#d0d8e8; font-size:var(--ex-body-size); line-height:1.8; }
+.experience-refined .ex-highlights li:before { content:""; width:3px; height:3px; border-radius:50%; background:#aa9ce8; position:absolute; left:0; top:.8em; }
+.experience-refined .ex-stack { display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; padding-top:19px; border-top:1px solid var(--ex-border); }
+.experience-refined .ex-stack>span { display:inline-flex; align-items:center; gap:7px; color:#e0e7f5; font-size:var(--ex-meta-size); font-weight:500; line-height:1.4; padding:7px 10px; border:1px solid #a598ff45; border-radius:6px; background:linear-gradient(135deg,#a598ff16,#74e4d309),#172032; box-shadow:inset 0 1px 0 #ffffff05; }
+.experience-refined .ex-stack img { display:block; flex:none; width:15px; height:15px; object-fit:contain; }
+.experience-refined .ex-career-note { display:flex; align-items:center; gap:10px; color:#b5c1d7; font-size:var(--ex-meta-size); line-height:1.7; margin:17px 0 0 35px; }
+.experience-refined .ex-career-note>span { color:#ad9ce6; font-size:15px; }
+
+/* The optional focused view reuses the same role data. */
+.experience-refined .ex-career-board { display:grid; grid-template-columns:190px minmax(0,1fr); border:1px solid var(--ex-border); border-radius:15px; overflow:hidden; background:linear-gradient(145deg,#151a2b,#0f1422); }
+.experience-refined .ex-company-rail { display:flex; flex-direction:column; gap:4px; padding:9px; border-right:1px solid var(--ex-border); background:#0a101c66; }
+.experience-refined .ex-company { display:grid; grid-template-columns:minmax(0,1fr) 14px; align-items:center; gap:8px; border:1px solid transparent; border-radius:8px; padding:14px 12px; background:none; text-align:left; color:#c2cce0; width:100%; min-width:0; transition:border-color .2s,background .2s; }
+.experience-refined .ex-company:hover { background:#a598ff08; }
+.experience-refined .ex-company[aria-pressed=true] { background:linear-gradient(120deg,#a598ff1d,#74e4d308); border-color:#a598ff40; box-shadow:inset 2px 0 #ab99ed; color:#edeaf8; }
+.experience-refined .ex-company .ex-logo { grid-column:1; grid-row:1; justify-self:center; width:104px; max-width:100%; height:28px; }
+.experience-refined .ex-company .ex-logo img { height:28px; }
+.experience-refined .ex-company>span:nth-child(2) { grid-column:1/-1; grid-row:2; min-width:0; }
+.experience-refined .ex-company strong { display:block; font-size:var(--ex-meta-size); font-weight:550; line-height:1.5; }
+.experience-refined .ex-company small { display:block; color:#b8c5dc; font-size:var(--ex-label-size); line-height:1.5; margin-top:4px; }
+.experience-refined .ex-company>b { grid-column:2; grid-row:1; font-size:11px; color:#9de0d6; font-weight:400; opacity:0; }
+.experience-refined .ex-company[aria-pressed=true]>b { opacity:1; }
+.experience-refined .ex-focused-role { min-width:0; animation:ex-details-enter .25s ease both; }
+.experience-refined .ex-role-meta { display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; color:#c1cde2; font:var(--ex-label-size)/1.6 ui-monospace,Consolas,monospace; margin-bottom:25px; }
+.experience-refined .ex-current { color:#9addce; letter-spacing:.07em; }
+.experience-refined .ex-past { color:#b6a6ec; letter-spacing:.07em; }
+.experience-refined .ex-focused-role h3 { margin:0 0 16px; font-size:clamp(22px,2.3vw,29px); line-height:1.2; font-weight:550; letter-spacing:-.04em; }
+.experience-refined .ex-role-sub { display:flex; align-items:center; flex-wrap:wrap; justify-content:space-between; gap:10px; margin-bottom:25px; }
+.experience-refined .ex-role-sub a { color:#d1c4ff; font-size:var(--ex-support-size); }
+.experience-refined .ex-role-sub>span { color:#c9d3e6; font:500 var(--ex-meta-size)/1.6 ui-monospace,Consolas,monospace; }
+
+/* Compact supporting material belongs beside the career, not below it. */
+.experience-refined .ex-kicker { display:block; font:var(--ex-label-size)/1.7 ui-monospace,Consolas,monospace; letter-spacing:.035em; color:#a6e9de; }
+.experience-refined .ex-education { padding:23px; border:1px solid var(--ex-border); border-radius:15px; background:linear-gradient(140deg,#141a2b,#111824c9); }
+.experience-refined .ex-education-top { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:18px; }
+.experience-refined .ex-education-symbol { color:#baa9f4; font-size:23px; line-height:1; }
+.experience-refined .ex-education h3 { color:#e2e7f2; margin:0 0 9px; font-size:20px; line-height:1.3; letter-spacing:-.035em; font-weight:550; }
+.experience-refined .ex-education>p { color:#c5d0e3; font-size:var(--ex-support-size); line-height:1.7; margin:0; }
+.experience-refined .ex-education-result { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-top:20px; color:#bbc8de; font-size:var(--ex-meta-size); line-height:1.6; }
+.experience-refined .ex-education-result>span:last-child { display:flex; align-items:baseline; gap:5px; font:var(--ex-label-size) ui-monospace,Consolas,monospace; white-space:nowrap; }
+.experience-refined .ex-education-result strong { color:#98dfd0; font:500 25px/1 "Segoe UI",Arial,sans-serif; letter-spacing:-.04em; }
+.experience-refined .ex-coursework { margin-top:20px; padding-top:14px; border-top:1px solid var(--ex-border); }
+.experience-refined .ex-coursework summary { display:flex; justify-content:space-between; align-items:center; list-style:none; color:#c5d0e3; font-size:var(--ex-meta-size); cursor:pointer; }
+.experience-refined .ex-coursework summary::-webkit-details-marker { display:none; }
+.experience-refined .ex-coursework summary>span { color:#b4a2ef; font-size:14px; transition:rotate .2s; }
+.experience-refined .ex-coursework[open] summary>span { rotate:45deg; }
+.experience-refined .ex-coursework ul { display:flex; gap:6px; flex-wrap:wrap; list-style:none; margin:14px 0 0; padding:0; }
+.experience-refined .ex-coursework li { color:#c9d3e5; border:1px solid #a598ff40; border-radius:4px; padding:5px 8px; font-size:var(--ex-label-size); line-height:1.5; }
+.experience-refined .ex-recognition { padding:24px 23px 6px; border:1px solid var(--ex-border); border-radius:15px; background:linear-gradient(150deg,#141a2ac9,#101622b3); scroll-margin-top:120px; }
+.experience-refined .ex-recognition-heading { margin-bottom:19px; }
+.experience-refined .ex-recognition-heading .ex-kicker { margin-bottom:13px; }
+.experience-refined .ex-recognition h3 { margin:0; color:#e4e8f3; font-size:24px; font-weight:550; line-height:1.2; letter-spacing:-.04em; }
+.experience-refined .ex-recognition h3>span { color:#9ca9c2; }
+.experience-refined .ex-milestones { list-style:none; margin:0; padding:0; }
+.experience-refined .ex-milestones li { display:flex; align-items:flex-start; gap:12px; padding:17px 0; border-top:1px solid var(--ex-border); }
+.experience-refined .ex-mark { display:grid; place-items:center; width:29px; height:29px; flex:0 0 29px; padding:2px; background:none; margin-top:1px; }
+.experience-refined .ex-mark img { display:block; width:100%; height:100%; object-fit:contain; filter:brightness(0) invert(.86); }
+.experience-refined .ex-line-mark { padding:0; color:#c4b3f5; border:1px solid #a598ff30; background:#a598ff0b; font-size:21px; }
+.experience-refined .ex-milestones li>div { min-width:0; }
+.experience-refined .ex-milestones h4 { color:#e2e7f1; font-weight:550; font-size:var(--ex-support-size); line-height:1.5; margin:0 0 5px; }
+.experience-refined .ex-milestones p { color:#c1cde1; font-size:var(--ex-support-size); line-height:1.7; margin:0; }
+.experience-refined .ex-milestones p strong { font-weight:550; color:#9bdece; }
+.experience-refined .ex-milestone-tag { font:var(--ex-label-size)/1.4 ui-monospace,Consolas,monospace; flex-shrink:0; margin-left:auto; padding:4px 5px; border:1px solid #a598ff25; border-radius:4px; color:#d0c1ff; }
+.experience-refined .ex-give-logo { width:100px; height:17px; object-fit:contain; object-position:left; filter:brightness(0) invert(.84); display:block; margin-bottom:10px; }
+.experience-refined[data-ex-motion=off] .ex-travel-dot:after { animation:none; }
+.experience-refined[data-ex-motion=off] .ex-travel-dot,.experience-refined[data-ex-motion=off] .ex-progress-fill { transition:none; }
+.experience-refined[data-ex-motion=off] .ex-role-details,.experience-refined[data-ex-motion=off] .ex-focused-role { animation:none; }
+@keyframes ex-beacon { 0%,100%{opacity:.35;scale:.85}50%{opacity:.8;scale:1.2} }
+@keyframes ex-details-enter { from{opacity:.55;transform:translateY(5px)}to{opacity:1;transform:none} }
+@media(min-width:1051px) and (min-height:1000px) { .experience-refined .ex-sidebar { position:sticky; top:110px; } }
+@media(max-width:1150px) { .experience-refined .ex-layout { grid-template-columns:minmax(0,1fr) 270px; gap:22px; }.experience-refined .ex-role-toggle { grid-template-columns:92px minmax(0,1fr) 14px; gap:6px 16px; padding:20px 18px; }.experience-refined .ex-role-toggle .ex-logo { grid-row:1/3; width:92px; }.experience-refined .ex-role-toggle .ex-summary-copy { grid-column:2; grid-row:1; }.experience-refined .ex-role-toggle .ex-expand { grid-column:3; grid-row:1/3; }.experience-refined .ex-summary-copy { flex-basis:60%; }.experience-refined .ex-summary-period { grid-column:2; grid-row:2; margin:0; }.experience-refined .ex-expand { margin-left:auto; }.experience-refined .ex-heading { align-items:flex-start; }.experience-refined .ex-layout-switch { margin-top:8px; }.experience-refined .ex-career-board { grid-template-columns:160px minmax(0,1fr); }.experience-refined .ex-company { gap:7px; padding-inline:5px; }.experience-refined .ex-company>b { display:none; }.experience-refined .ex-role-content { padding:24px 22px; } }
+@media(max-width:960px) { .experience-refined .ex-layout { grid-template-columns:1fr; gap:26px; }.experience-refined .ex-sidebar { grid-template-columns:.9fr 1.1fr; align-items:start; }.experience-refined .ex-career-board { grid-template-columns:190px minmax(0,1fr); }.experience-refined .ex-role-toggle { grid-template-columns:104px minmax(0,1fr) auto 14px; gap:18px; }.experience-refined .ex-role-toggle .ex-logo { grid-column:1; grid-row:1; width:104px; }.experience-refined .ex-role-toggle .ex-expand { grid-column:4; grid-row:1; }.experience-refined .ex-summary-copy { flex-basis:auto; }.experience-refined .ex-summary-period { grid-column:3; grid-row:1; margin:0; }.experience-refined .ex-expand { margin-left:0; }.experience-refined .ex-heading h2 { font-size:43px; }.experience-refined .ex-heading p { font-size:14px; }.experience-refined .ex-layout-switch button { padding:10px 12px; font-size:13px; } }
+@media(max-width:650px) { .experience-refined .ex-heading { display:block; margin-bottom:28px; }.experience-refined .ex-heading h2 { font-size:37px; line-height:1.12; }.experience-refined .ex-heading p { max-width:340px; font-size:14px; }.experience-refined .ex-layout-switch { display:inline-flex; margin-top:23px; }.experience-refined .ex-layout-switch button { padding:11px 15px; font-size:13px; }.experience-refined .ex-layout { gap:24px; }.experience-refined .ex-sidebar { grid-template-columns:1fr; gap:15px; }.experience-refined .ex-timeline-item { padding-left:26px; margin-bottom:13px; }.experience-refined .ex-scroll-track { left:5px; }.experience-refined .ex-row-marker { left:1px; top:35px; }.experience-refined .ex-role-toggle { grid-template-columns:82px minmax(0,1fr) 12px; gap:6px 12px; padding:18px 15px; }.experience-refined .ex-role-toggle .ex-logo { grid-column:1; grid-row:1; width:82px; }.experience-refined .ex-logo { height:34px; }.experience-refined .ex-summary-copy { flex-basis:62%; }.experience-refined .ex-summary-copy>strong { font-size:15px; line-height:1.5; }.experience-refined .ex-summary-copy>span { gap:6px; }.experience-refined .ex-summary-period { grid-column:1/-1; grid-row:2; white-space:normal; margin-top:8px; }.experience-refined .ex-role-toggle .ex-expand { position:static; grid-column:3; grid-row:1; align-self:start; padding-top:10px; font-size:17px; }.experience-refined .ex-role-toggle { position:relative; }.experience-refined .ex-role-details .ex-role-content { padding:0 17px 20px; }.experience-refined .ex-highlights li { padding-left:14px; }.experience-refined .ex-detail-meta { padding-top:14px; margin-bottom:16px; gap:9px; }.experience-refined .ex-stack { gap:7px; margin-top:18px; padding-top:16px; }.experience-refined .ex-stack>span { padding:7px 9px; gap:6px; }.experience-refined .ex-career-note { margin-left:26px; align-items:flex-start; }.experience-refined .ex-career-board { display:block; }.experience-refined .ex-company-rail { flex-direction:row; overflow-x:auto; overscroll-behavior-inline:contain; border-right:0; border-bottom:1px solid var(--ex-border); padding:8px; scrollbar-width:thin; scrollbar-color:#a598ff44 transparent; }.experience-refined .ex-company { width:178px; flex:0 0 178px; padding:13px 12px; }.experience-refined .ex-company[aria-pressed=true] { box-shadow:inset 0 -2px #ab99ed; }.experience-refined .ex-company .ex-logo { width:104px; height:28px; } .experience-refined .ex-role-content { padding:24px 21px; }.experience-refined .ex-focused-role h3 { font-size:25px; }.experience-refined .ex-role-meta { margin-bottom:22px; } .experience-refined .ex-education { padding:23px; }.experience-refined .ex-education h3 { font-size:21px; }.experience-refined .ex-education h3 br { display:none; }.experience-refined .ex-education h3 br:after { content:" "; } .experience-refined .ex-recognition { padding:23px 23px 5px; }.experience-refined .ex-recognition h3 br { display:none; }.experience-refined .ex-recognition h3>span:before { content:" "; }.experience-refined .ex-recognition h3 { font-size:24px; } }
+@media(prefers-reduced-motion:reduce) { .experience-refined * { animation:none!important; transition:none!important; }.experience-refined .ex-progress-fill,.experience-refined .ex-travel-dot { display:none; } }
+
+@media(max-width:380px) { .experience-refined .ex-role-toggle { grid-template-columns:70px minmax(0,1fr) 10px; gap:6px 10px; padding-inline:12px; }.experience-refined .ex-role-toggle .ex-logo { width:70px; } }

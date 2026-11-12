@@ -1,0 +1,61 @@
+{
+  "skills": {
+    "JavaScript": "/portfolio/logos/javascript.svg",
+    "TypeScript": "/portfolio/logos/typescript.svg",
+    "Python": "/portfolio/logos/python.svg",
+    "Java": "/portfolio/logos/java.svg",
+    "C": "/portfolio/logos/c.svg",
+    "C++": "/portfolio/logos/cplusplus.svg",
+    "Dart": "/portfolio/logos/dart.svg",
+    "Next.js": "/portfolio/logos/nextdotjs.svg",
+    "React": "/portfolio/logos/react.svg",
+    "TailwindCSS": "/portfolio/logos/tailwindcss.svg",
+    "Vite": "/portfolio/logos/vite.svg",
+    "SCSS": "/portfolio/logos/sass.svg",
+    "Node.js": "/portfolio/logos/nodedotjs.svg",
+    "Express.js": "/portfolio/logos/express.svg",
+    "FastAPI": "/portfolio/logos/fastapi.svg",
+    "Flask": "/portfolio/logos/flask.svg",
+    "Flutter": "/portfolio/logos/flutter.svg",
+    "Kotlin": "/portfolio/logos/kotlin.svg",
+    "TensorFlow": "/portfolio/logos/tensorflow.svg",
+    "TensorFlow Lite": "/portfolio/logos/tensorflow.svg",
+    "CrewAI": "/portfolio/logos/crewai.svg",
+    "Vercel": "/portfolio/logos/vercel.svg",
+    "Azure": "/portfolio/logos/azure.svg",
+    "Heroku": "/portfolio/logos/heroku.svg",
+    "Firebase": "/portfolio/logos/firebase.svg",
+    "Supabase": "/portfolio/logos/supabase.svg",
+    "MongoDB": "/portfolio/logos/mongodb.svg",
+    "PostgreSQL": "/portfolio/logos/postgresql.svg",
+    "MySQL": "/portfolio/logos/mysql.svg",
+    "Git": "/portfolio/logos/git.svg",
+    "Docker": "/portfolio/logos/docker.svg",
+    "Socket.io": "/portfolio/logos/socketdotio.svg",
+    "Android Studio": "/portfolio/logos/androidstudio.svg",
+    "Unix/Linux": "/portfolio/logos/linux.svg",
+    "VS Code": "/portfolio/logos/vscode.svg",
+    "Cursor": "/portfolio/logos/cursor.svg",
+    "Postman": "/portfolio/logos/postman.svg",
+    "Figma": "/portfolio/logos/figma.svg",
+    "Jenkins": "/portfolio/logos/jenkins.svg"
+  },
+  "companies": {
+    "onsemi": "/portfolio/logos/onsemi.svg",
+    "Oracle": "/portfolio/logos/oracle.svg",
+    "LabelBox": "/portfolio/logos/labelbox.svg",
+    "Morgan Stanley": "/portfolio/logos/morganstanley.svg",
+    "xAI": "/portfolio/logos/xai.svg",
+    "Samsung Research": "/portfolio/logos/samsung.svg",
+    "Samsung Research Institute Bangalore": "/portfolio/logos/samsung.svg"
+  },
+  "socials": {
+    "GitHub": "/portfolio/logos/github.svg",
+    "LinkedIn": "/portfolio/logos/linkedin.svg"
+  },
+  "providers": {
+    "OpenAI": "/portfolio/logos/openai.svg",
+    "Anthropic": "/portfolio/logos/anthropic.svg",
+    "Gemini": "/portfolio/logos/googlegemini.svg"
+  }
+}

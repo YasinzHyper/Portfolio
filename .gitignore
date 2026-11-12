@@ -20,6 +20,9 @@
 # production
 /build
 
+# local design exploration (production assets live in public/portfolio)
+/design-concepts/
+
 # misc
 .DS_Store
 *.pem
